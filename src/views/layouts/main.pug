@@ -1,0 +1,34 @@
+block variables
+include ../mixins
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    //---- Meta
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description" content="Description")
+
+    //---- Title
+    title #{title}
+
+    //---- Roboto
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet")
+
+    //---- Theme
+    meta(name="msapplication-TileColor" content="#0E0E0E")
+    meta(name="theme-color" content="#0E0E0E")
+
+    //---- CSS
+    link(rel="stylesheet" href="./assets/css/main.css")
+
+  body
+    block Header
+
+    main
+      block Content
+
+    block Footer

@@ -1,0 +1,28 @@
+//---- Base
+@import "__variables", "__reset"
+//---- Global
+@import "../../views/components/TheHeader"
+@import "../../views/components/TheFooter"
+//---- Blocks
+@import "../../views/components/Blocks/BlockFirst"
+@import "../../views/components/Blocks/BlockSecond"
+//---- UI
+@import "../../views/components/UI/Button"
+@import "../../views/components/UI/Popup"
+
+html, body
+  width: 100%
+  height: 100%
+html
+  font-size: 62.5%
+body
+  display: flex
+  flex-direction: column
+
+.inner
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+  padding-left: 15px
+  padding-right: 15px
+  background-color: #C0DBD9

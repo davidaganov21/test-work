@@ -1,0 +1,7 @@
+mixin UI-Popup(attr)
+  div(class="popup" id="popup")
+    a(href="#" class="popup__backdrop" aria-label="Close popup" tabindex="-1")
+    div(class="popup__body")
+      +UI-Button({ class: "popup__close", value: "X", href: "#" })
+      p(class="popup__content") #{attr.value}
+
